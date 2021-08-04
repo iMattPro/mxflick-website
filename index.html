@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mike Flicker Music Services: Film, television and music production">
+    <title>Mike Flicker Music Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="assets/css/main.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fira+Sans&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-32334231-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-32334231-3');
+    </script>
+  </head>
+  <body class="d-flex h-100 text-center text-white">
+    
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+           <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link" href="https://www.imdb.com/name/nm0282287/bio">Biography</a>
+            <a class="nav-link" href="http://www.imdb.com/name/nm0282287/">IMDb</a>
+            <a class="nav-link" href="#" id="contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <form id="cm-frm" class="d-none my-3" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknkpzrz" method="post">
+        <fieldset id="cm-frm-inputs">
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" name="name" id="full-name" class="form-control" placeholder="Your name" required="">
+            </div>
+            <div class="col">
+              <input type="email" name="_replyto" id="email-address" class="form-control" placeholder="Your email address" required="">
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <textarea rows="5" name="message" id="message" class="form-control" placeholder="Your message" required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+          </div>	
+        </fieldset>
+        <input type="submit" value="Submit" class="btn btn-secondary">
+      </form>
+
+      <main class="px-3 text-start">
+        <div class="d-sm-flex align-items-center mb-3">
+          <img class="img-fluid opacity-75" width="256" height="256" src="assets/images/music-cd.svg" alt="Music">
+          <div class="hero px-3">
+            <h1>Mike Flicker</h1>
+            <p class="px-1">Film/TV &amp; Music Production</p>
+          </div>
+        </div>
+        <p class="lead">
+          Mike Flicker is a consummate music industry veteran, with creative, technical, and administrative expertise developed through decades of service to the music, television, and film industries.
+        </p>
+        <p class="lead">
+          His depth of music production & editorial, technology, and administrative experience led naturally to the formation of Mike Flicker Music Services, a full-service music company supplying Music Editorial, Music Production, and related services to the entertainment community.
+        </p>
+      </main>
+
+      <footer class="mt-auto text-white-50">
+        <p>Copyright &copy; 2021, MikeFlicker.com</p>
+        <p class="icon-credit">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+      </footer>
+    </div>
+
+    <script>
+      const contact = document.querySelector('#contact');
+      const form = document.querySelector("#cm-frm");
+      contact.addEventListener('click', (e) => {
+        e.preventDefault();
+        form.classList.toggle("d-none");
+      });
+    </script>
+    
+  </body>
+</html>
