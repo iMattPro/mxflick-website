@@ -2,32 +2,26 @@
 $white:         hsl(0, 0%, 100%);
 $white-50:      hsla(0, 0%, 100%, 0.5);
 $white-25:      hsla(0, 0%, 100%, 0.25);
-$bg-primary:    hsl(214, 30%, 20%) 50%;
-$bg-secondary:  hsl(214, 30%, 24%) 50.1%;
+$bg-primary:    hsl(214, 75%, 14%);
+$bg-secondary:  hsl(206, 28%, 45%);
 $shadow-color:  hsla(0, 0%, 0%, 0.5);
 $title-color:   hsl(57, 18%, 58%);
 
-/* body {
-  text-shadow: 0 .05rem .1rem $shadow;
-  box-shadow: inset 0 0 5rem $shadow;
-  font-family: 'Fira Sans', sans-serif;
-  background-color: $bg-primary;
-} */
-
-body,
-html {
-  height: 100%;
-  font-family: 'Fira Sans', sans-serif;
-}
-
 body {
+  font-family: 'Fira Sans', sans-serif;
   text-shadow: 0 .05rem .1rem $shadow-color;
-  box-shadow: inset 0 0 5rem $shadow-color;
-  background: linear-gradient(15deg, $bg-primary, $bg-secondary);
+  // box-shadow: inset 0 0 5rem $shadow-color;
+  // background-color: hsl(214, 30%, 20%) 50%;
+  // background: linear-gradient(15deg, hsl(214, 30%, 20%) 50%, hsl(214, 30%, 24%) 50.1%);
+  // background-color: rgb(104, 109, 195);
+  // background-image: linear-gradient(90deg, rgb(51, 183, 226), rgb(94, 98, 176), rgb(220, 48, 124));
+  background-color: $bg-primary;
+  background-image: linear-gradient(to top, $bg-primary 0%, $bg-secondary 100%);
+  background-attachment: fixed;
 }
 
 .cover-container {
-  max-width: 42em;
+  max-width: 48em;
 }
 
 .hero {
