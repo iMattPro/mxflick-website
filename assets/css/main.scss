@@ -1,11 +1,12 @@
 /* color palette */
-$white:         hsl(0, 0%, 100%);
-$white-50:      hsla(0, 0%, 100%, 0.5);
-$white-25:      hsla(0, 0%, 100%, 0.25);
-$bg-primary:    hsl(214, 75%, 14%);
-$bg-secondary:  hsl(206, 28%, 45%);
-$shadow-color:  hsla(0, 0%, 0%, 0.5);
-$title-color:   hsl(57, 18%, 58%);
+$white:           hsl(0, 0%, 100%);
+$white-50:        hsla(0, 0%, 100%, 0.5);
+$white-25:        hsla(0, 0%, 100%, 0.25);
+$color-primary:   hsl(214, 75%, 14%);
+$color-secondary: hsl(223, 22%, 47%);
+$color-text:      hsl(212, 100%, 95%);
+$shadow-color:    hsla(0, 0%, 0%, 0.5);
+$hero-color:      hsl(43, 78%, 47%);
 
 body {
   font-family: 'Fira Sans', sans-serif;
@@ -15,9 +16,10 @@ body {
   // background: linear-gradient(15deg, hsl(214, 30%, 20%) 50%, hsl(214, 30%, 24%) 50.1%);
   // background-color: rgb(104, 109, 195);
   // background-image: linear-gradient(90deg, rgb(51, 183, 226), rgb(94, 98, 176), rgb(220, 48, 124));
-  background-color: $bg-primary;
-  background-image: linear-gradient(to top, $bg-primary 0%, $bg-secondary 100%);
+  background-color: $color-primary;
+  background-image: linear-gradient(to top, $color-primary 0%, $color-secondary 100%);
   background-attachment: fixed;
+  color: $color-text;
 }
 
 .cover-container {
@@ -26,41 +28,37 @@ body {
 
 .hero {
   font-family: 'Barlow', sans-serif;
+  h1 {
+    color: $hero-color;
+    font-weight: 700;
+  }
 }
 
-.hero h1 {
-  color: $title-color;
-  font-weight: 700;
-}
-
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: $white-50;
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: $white-25;
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: $white;
-  border-bottom-color: $white;
+.nav-masthead {
+  .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: $white-50;
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+  }
+  .nav-link:hover, .nav-link:focus {
+    border-bottom-color: $white-25;
+  }
+  .nav-link + .nav-link {
+    margin-left: 1rem;
+  }
+  .active {
+    color: $white;
+    border-bottom-color: $white;
+  }
 }
 
 .icon-credit {
   font-size: .5rem;
   margin-top: -.5rem;
-}
-
-.icon-credit a {
-  text-decoration: none;
-  color: inherit;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
